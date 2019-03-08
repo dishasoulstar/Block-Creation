@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    width: 800px;
+    height: 82px;
+    margin-bottom: 11px;
+}
+
+.logo {
+    display: inline-block;
+    height: 82px;
+    width: 232px;
+    border-style: solid;
+
+}
+
+.banner {
+    display: inline-block;
+    height: 82px;
+    width: 552px;
+    border-style: solid;
+    margin-left: 11px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    height: 448px;
+    width: 232px;
+}
+
+.News {
+    height: 210px;
+    width: 232px;
+    border-style: solid;
+    margin-bottom: 33px;
+}
+
+.Ad {
+    height: 210px;
+    width: 232px;
+    border-style: solid;
+}
+
+.navigation {
+
+    height: 49px;
+    width: 557px;
+    border-style: solid;
+    margin-bottom: 15px;
+}
+
+.text {
+    height: 384px;
+    width: 557px;
+    border-style: solid;
+}
+
+article {
+    margin-left: 11px;
+    float: left;
+    height: 448px;
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.f1 {
+    margin-top: 15px;
+    height: 44px;
+    width: 800px;
+    border-style: solid;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+
+   header, nav,
+    article,footer {
+        width: 100%;
+        height: auto;
+    }
+}
