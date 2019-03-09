@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    width: 800px;
+    height: 82px;
+    margin-bottom: 11px;
+}
+
+.logo {
+    display: inline-block;
+    height: 82px;
+    width: 232px;
+    border-style: solid;
+    text-align: center;
+}
+
+.banner {
+    display: inline-block;
+    height: 82px;
+    width: 552px;
+    border-style: solid;
+    margin-left: 11px;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    height: 448px;
+    width: 232px;
+}
+
+.News {
+    height: 210px;
+    width: 232px;
+    border-style: solid;
+    margin-bottom: 33px;
+    text-align: center;
+}
+
+.Ad {
+    height: 210px;
+    width: 232px;
+    border-style: solid;
+    text-align: center;
+}
+
+ul {
+    margin-top:0px;
+    list-style-type: none;
+    height: 49px;
+    width: 557px;
+    border-style: solid;
+    margin-bottom: 15px;
+    background-color: #000099;
+    font-size:16px;
+    padding: 10px;
+    text-align: center;
+}
+li{
+    float: left;
+}
+li a{
+    color:#ffffff;
+    font-size:16px;
+    padding: 14px 16px;
+    text-align: center;
+}
+.text {
+    height: 386px;
+    width: 557px;
+    border-style: solid;
+    text-align: center;
+}
+
+article {
+    margin-left: 11px;
+    float: left;
+    height: 448px;
+    
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    margin-top: 15px;
+    height: 44px;
+    width: 800px;
+    border-style: solid;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+
+   header, nav,
+    article,footer,section {
+        width: 100%;
+        height: auto;
+    }
+}
